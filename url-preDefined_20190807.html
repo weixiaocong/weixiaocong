@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Filtering</title>
+<style type="text/css">
+html, body{margin: 0;padding: 0;font-family: Verdana, Arial, sans-serif;font-size: 10pt;}
+.main {position: absolute;top:10%;left:10%;width:80%;border: 5px solid #aaa;box-shadow: 0 0 20px #000;}
+h1{color: red;padding: 40px 40px 0 40px;}
+.notice{padding: 20px 40px 40px 40px;}
+.notice p{padding-top: 14px;font-size: 14px;word-wrap: break-word;}
+.notice p label{font-weight: 600;white-space: pre;}
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Web Access blocked</h1>
+<div id="notice" class="notice">
+<p>联系管理员Administrador de contactose.</p>
+<p><label>Blocked Type: </label>%BLOCK_TYPE</p>
+<p><label>Category: </label>%SUBCATNAME</p>
+<p><label>URL: </label>%URL</p>
+<p>If you have proper reason to access this specific website, please contact your network administrator for help.</p>
+</div>
+</div>
+</body>
+</html>
